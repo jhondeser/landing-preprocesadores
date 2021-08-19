@@ -1,0 +1,17 @@
+extend componentes/plantilla.pug
+block contenidos
+  section.intro
+    .intro__imagen
+      img(src="/images/imagen.png")
+    .intro__contenido
+      h2= titulos[0]
+      p 
+        | Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        | Accusamus consequatur ad incidunt eius repellat rem nulla 
+        | libero nemo dignissimos, iste earum quam harum eaque blanditiis 
+        | laudantium? Est nesciunt cupiditate repellat!
+      a.boton Leer mas
+  main.contenido
+    +caja("imagen.png",titulos[1],"soy el mejor")
+    +caja("imagen.png",titulos[2],"me gusta viajar")
+    +caja("imagen.png",titulos[3],"cambia el mundo")
